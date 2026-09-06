@@ -85,7 +85,10 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => (
       <h3 className="text-lg font-bold mt-3 text-foreground">{item.title}</h3>
       <p className="text-sm text-muted-foreground mt-1">{item.details}</p>
       <p className="text-2xl font-bold text-accent mt-3">{item.price}</p>
-      <button className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 rounded-lg transition-colors">
+      <button 
+        onClick={() => window.open('https://instagram.com/turbo_squad_cpm', '_blank')}
+        className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 rounded-lg transition-colors"
+      >
         Contact
       </button>
     </div>
